@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		2BDAD7BA1FAFC50000A8BCCA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7B91FAFC50000A8BCCA /* main.swift */; };
+		2BDAD7C11FAFC51E00A8BCCA /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7C01FAFC51E00A8BCCA /* Characters.swift */; };
+		2BDAD7C31FAFC53000A8BCCA /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7C21FAFC53000A8BCCA /* Warrior.swift */; };
+		2BDAD7C51FAFC53D00A8BCCA /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7C41FAFC53D00A8BCCA /* Mage.swift */; };
+		2BDAD7C71FAFC54400A8BCCA /* Colossus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7C61FAFC54400A8BCCA /* Colossus.swift */; };
+		2BDAD7C91FAFC55300A8BCCA /* Dwarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7C81FAFC55300A8BCCA /* Dwarf.swift */; };
+		2BDAD7CC1FAFC7CA00A8BCCA /* Weapons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7CB1FAFC7CA00A8BCCA /* Weapons.swift */; };
+		2BDAD7CE1FAFC7D500A8BCCA /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7CD1FAFC7D500A8BCCA /* Sword.swift */; };
+		2BDAD7D01FAFC7DC00A8BCCA /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7CF1FAFC7DC00A8BCCA /* Staff.swift */; };
+		2BDAD7D21FAFC80900A8BCCA /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7D11FAFC80900A8BCCA /* Shield.swift */; };
+		2BDAD7D41FAFC81B00A8BCCA /* Axe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7D31FAFC81B00A8BCCA /* Axe.swift */; };
+		2BE6C2FB1FAFCB4A004E807A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6C2FA1FAFCB4A004E807A /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +36,17 @@
 /* Begin PBXFileReference section */
 		2BDAD7B61FAFC50000A8BCCA /* Projet 3 : Créez votre premier jeu vidéo avec Swift ! */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Projet 3 : Créez votre premier jeu vidéo avec Swift !"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BDAD7B91FAFC50000A8BCCA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2BDAD7C01FAFC51E00A8BCCA /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		2BDAD7C21FAFC53000A8BCCA /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
+		2BDAD7C41FAFC53D00A8BCCA /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mage.swift; sourceTree = "<group>"; };
+		2BDAD7C61FAFC54400A8BCCA /* Colossus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colossus.swift; sourceTree = "<group>"; };
+		2BDAD7C81FAFC55300A8BCCA /* Dwarf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dwarf.swift; sourceTree = "<group>"; };
+		2BDAD7CB1FAFC7CA00A8BCCA /* Weapons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapons.swift; sourceTree = "<group>"; };
+		2BDAD7CD1FAFC7D500A8BCCA /* Sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
+		2BDAD7CF1FAFC7DC00A8BCCA /* Staff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
+		2BDAD7D11FAFC80900A8BCCA /* Shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield.swift; sourceTree = "<group>"; };
+		2BDAD7D31FAFC81B00A8BCCA /* Axe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axe.swift; sourceTree = "<group>"; };
+		2BE6C2FA1FAFCB4A004E807A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +80,35 @@
 			isa = PBXGroup;
 			children = (
 				2BDAD7B91FAFC50000A8BCCA /* main.swift */,
+				2BE6C2FA1FAFCB4A004E807A /* Game.swift */,
+				2BDAD7D51FAFC84C00A8BCCA /* ARMES */,
+				2BDAD7CA1FAFC55900A8BCCA /* PERSONNAGES */,
 			);
 			path = "Projet 3 : Créez votre premier jeu vidéo avec Swift !";
+			sourceTree = "<group>";
+		};
+		2BDAD7CA1FAFC55900A8BCCA /* PERSONNAGES */ = {
+			isa = PBXGroup;
+			children = (
+				2BDAD7C01FAFC51E00A8BCCA /* Characters.swift */,
+				2BDAD7C21FAFC53000A8BCCA /* Warrior.swift */,
+				2BDAD7C41FAFC53D00A8BCCA /* Mage.swift */,
+				2BDAD7C61FAFC54400A8BCCA /* Colossus.swift */,
+				2BDAD7C81FAFC55300A8BCCA /* Dwarf.swift */,
+			);
+			path = PERSONNAGES;
+			sourceTree = "<group>";
+		};
+		2BDAD7D51FAFC84C00A8BCCA /* ARMES */ = {
+			isa = PBXGroup;
+			children = (
+				2BDAD7CB1FAFC7CA00A8BCCA /* Weapons.swift */,
+				2BDAD7CD1FAFC7D500A8BCCA /* Sword.swift */,
+				2BDAD7CF1FAFC7DC00A8BCCA /* Staff.swift */,
+				2BDAD7D31FAFC81B00A8BCCA /* Axe.swift */,
+				2BDAD7D11FAFC80900A8BCCA /* Shield.swift */,
+			);
+			path = ARMES;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +169,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDAD7D01FAFC7DC00A8BCCA /* Staff.swift in Sources */,
+				2BDAD7C71FAFC54400A8BCCA /* Colossus.swift in Sources */,
+				2BDAD7C31FAFC53000A8BCCA /* Warrior.swift in Sources */,
+				2BDAD7CC1FAFC7CA00A8BCCA /* Weapons.swift in Sources */,
+				2BDAD7C91FAFC55300A8BCCA /* Dwarf.swift in Sources */,
 				2BDAD7BA1FAFC50000A8BCCA /* main.swift in Sources */,
+				2BDAD7D21FAFC80900A8BCCA /* Shield.swift in Sources */,
+				2BE6C2FB1FAFCB4A004E807A /* Game.swift in Sources */,
+				2BDAD7CE1FAFC7D500A8BCCA /* Sword.swift in Sources */,
+				2BDAD7C11FAFC51E00A8BCCA /* Characters.swift in Sources */,
+				2BDAD7C51FAFC53D00A8BCCA /* Mage.swift in Sources */,
+				2BDAD7D41FAFC81B00A8BCCA /* Axe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
