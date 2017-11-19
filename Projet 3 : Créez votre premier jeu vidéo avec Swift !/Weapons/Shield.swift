@@ -1,5 +1,5 @@
 //
-//  Sword.swift
+//  Shield.swift
 //  Projet 3 : Créez votre premier jeu vidéo avec Swift !
 //
 //  Created by Levent Bostanci on 05/11/2017.
@@ -8,11 +8,10 @@
 
 import Foundation
 
-class Sword : Weapon{
+class Shield : Weapon{
 
-    override init(){
-    super.init()
-    type = .Attacking
-    self.attackPoints = 10
+    init(){
+        super.init(attackPoints: 7, healPoints: 0, type: .Attacking)
     }
 }
+

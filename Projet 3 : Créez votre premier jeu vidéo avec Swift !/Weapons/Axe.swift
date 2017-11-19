@@ -10,9 +10,7 @@ import Foundation
 
 class Axe : Weapon{
     
-    override init(){
-        super.init()
-        type = .Attacking
-        self.attackPoints = 14
+    init(){
+        super.init(attackPoints: 13, healPoints: 0, type: .Attacking)
     }
 }

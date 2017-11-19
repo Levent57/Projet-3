@@ -1,5 +1,5 @@
 //
-//  Weapons.swift
+//  Staff.swift
 //  Projet 3 : Créez votre premier jeu vidéo avec Swift !
 //
 //  Created by Levent Bostanci on 05/11/2017.
@@ -8,13 +8,9 @@
 
 import Foundation
 
-class Weapon {
-    
-    enum WeaponsType{
-        case Healing, Attacking
+class Staff : Weapon{
+ 
+    init(){
+        super.init(attackPoints: 0, healPoints: 8, type: .Healing)
     }
-    
-    var attackPoints: Int = 0
-    var healPoints: Int = 0
-    var type: WeaponsType?
 }

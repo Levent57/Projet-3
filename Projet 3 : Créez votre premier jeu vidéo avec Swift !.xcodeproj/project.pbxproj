@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1ABC921FB26D4A00E8C8F9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1ABC911FB26D4A00E8C8F9 /* Player.swift */; };
+		2B5A927B1FBC49ED005E01FB /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A927A1FBC49ED005E01FB /* Team.swift */; };
 		2BDAD7BA1FAFC50000A8BCCA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7B91FAFC50000A8BCCA /* main.swift */; };
-		2BDAD7C11FAFC51E00A8BCCA /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7C01FAFC51E00A8BCCA /* Characters.swift */; };
+		2BDAD7C11FAFC51E00A8BCCA /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7C01FAFC51E00A8BCCA /* Character.swift */; };
 		2BDAD7C31FAFC53000A8BCCA /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7C21FAFC53000A8BCCA /* Warrior.swift */; };
 		2BDAD7C51FAFC53D00A8BCCA /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7C41FAFC53D00A8BCCA /* Mage.swift */; };
 		2BDAD7C71FAFC54400A8BCCA /* Colossus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7C61FAFC54400A8BCCA /* Colossus.swift */; };
 		2BDAD7C91FAFC55300A8BCCA /* Dwarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7C81FAFC55300A8BCCA /* Dwarf.swift */; };
-		2BDAD7CC1FAFC7CA00A8BCCA /* Weapons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7CB1FAFC7CA00A8BCCA /* Weapons.swift */; };
+		2BDAD7CC1FAFC7CA00A8BCCA /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7CB1FAFC7CA00A8BCCA /* Weapon.swift */; };
 		2BDAD7CE1FAFC7D500A8BCCA /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7CD1FAFC7D500A8BCCA /* Sword.swift */; };
 		2BDAD7D01FAFC7DC00A8BCCA /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7CF1FAFC7DC00A8BCCA /* Staff.swift */; };
 		2BDAD7D21FAFC80900A8BCCA /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7D11FAFC80900A8BCCA /* Shield.swift */; };
@@ -34,14 +36,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B1ABC911FB26D4A00E8C8F9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		2B5A927A1FBC49ED005E01FB /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		2BDAD7B61FAFC50000A8BCCA /* Projet 3 : Créez votre premier jeu vidéo avec Swift ! */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Projet 3 : Créez votre premier jeu vidéo avec Swift !"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BDAD7B91FAFC50000A8BCCA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		2BDAD7C01FAFC51E00A8BCCA /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		2BDAD7C01FAFC51E00A8BCCA /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		2BDAD7C21FAFC53000A8BCCA /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
 		2BDAD7C41FAFC53D00A8BCCA /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mage.swift; sourceTree = "<group>"; };
 		2BDAD7C61FAFC54400A8BCCA /* Colossus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colossus.swift; sourceTree = "<group>"; };
 		2BDAD7C81FAFC55300A8BCCA /* Dwarf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dwarf.swift; sourceTree = "<group>"; };
-		2BDAD7CB1FAFC7CA00A8BCCA /* Weapons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapons.swift; sourceTree = "<group>"; };
+		2BDAD7CB1FAFC7CA00A8BCCA /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		2BDAD7CD1FAFC7D500A8BCCA /* Sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
 		2BDAD7CF1FAFC7DC00A8BCCA /* Staff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
 		2BDAD7D11FAFC80900A8BCCA /* Shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield.swift; sourceTree = "<group>"; };
@@ -81,34 +85,36 @@
 			children = (
 				2BDAD7B91FAFC50000A8BCCA /* main.swift */,
 				2BE6C2FA1FAFCB4A004E807A /* Game.swift */,
-				2BDAD7D51FAFC84C00A8BCCA /* ARMES */,
-				2BDAD7CA1FAFC55900A8BCCA /* PERSONNAGES */,
+				2B1ABC911FB26D4A00E8C8F9 /* Player.swift */,
+				2B5A927A1FBC49ED005E01FB /* Team.swift */,
+				2BDAD7D51FAFC84C00A8BCCA /* Weapons */,
+				2BDAD7CA1FAFC55900A8BCCA /* Characters */,
 			);
 			path = "Projet 3 : Créez votre premier jeu vidéo avec Swift !";
 			sourceTree = "<group>";
 		};
-		2BDAD7CA1FAFC55900A8BCCA /* PERSONNAGES */ = {
+		2BDAD7CA1FAFC55900A8BCCA /* Characters */ = {
 			isa = PBXGroup;
 			children = (
-				2BDAD7C01FAFC51E00A8BCCA /* Characters.swift */,
+				2BDAD7C01FAFC51E00A8BCCA /* Character.swift */,
 				2BDAD7C21FAFC53000A8BCCA /* Warrior.swift */,
 				2BDAD7C41FAFC53D00A8BCCA /* Mage.swift */,
 				2BDAD7C61FAFC54400A8BCCA /* Colossus.swift */,
 				2BDAD7C81FAFC55300A8BCCA /* Dwarf.swift */,
 			);
-			path = PERSONNAGES;
+			path = Characters;
 			sourceTree = "<group>";
 		};
-		2BDAD7D51FAFC84C00A8BCCA /* ARMES */ = {
+		2BDAD7D51FAFC84C00A8BCCA /* Weapons */ = {
 			isa = PBXGroup;
 			children = (
-				2BDAD7CB1FAFC7CA00A8BCCA /* Weapons.swift */,
+				2BDAD7CB1FAFC7CA00A8BCCA /* Weapon.swift */,
 				2BDAD7CD1FAFC7D500A8BCCA /* Sword.swift */,
 				2BDAD7CF1FAFC7DC00A8BCCA /* Staff.swift */,
 				2BDAD7D31FAFC81B00A8BCCA /* Axe.swift */,
 				2BDAD7D11FAFC80900A8BCCA /* Shield.swift */,
 			);
-			path = ARMES;
+			path = Weapons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +149,7 @@
 				TargetAttributes = {
 					2BDAD7B51FAFC50000A8BCCA = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -171,14 +178,16 @@
 			files = (
 				2BDAD7D01FAFC7DC00A8BCCA /* Staff.swift in Sources */,
 				2BDAD7C71FAFC54400A8BCCA /* Colossus.swift in Sources */,
+				2B5A927B1FBC49ED005E01FB /* Team.swift in Sources */,
 				2BDAD7C31FAFC53000A8BCCA /* Warrior.swift in Sources */,
-				2BDAD7CC1FAFC7CA00A8BCCA /* Weapons.swift in Sources */,
+				2B1ABC921FB26D4A00E8C8F9 /* Player.swift in Sources */,
+				2BDAD7CC1FAFC7CA00A8BCCA /* Weapon.swift in Sources */,
 				2BDAD7C91FAFC55300A8BCCA /* Dwarf.swift in Sources */,
 				2BDAD7BA1FAFC50000A8BCCA /* main.swift in Sources */,
 				2BDAD7D21FAFC80900A8BCCA /* Shield.swift in Sources */,
 				2BE6C2FB1FAFCB4A004E807A /* Game.swift in Sources */,
 				2BDAD7CE1FAFC7D500A8BCCA /* Sword.swift in Sources */,
-				2BDAD7C11FAFC51E00A8BCCA /* Characters.swift in Sources */,
+				2BDAD7C11FAFC51E00A8BCCA /* Character.swift in Sources */,
 				2BDAD7C51FAFC53D00A8BCCA /* Mage.swift in Sources */,
 				2BDAD7D41FAFC81B00A8BCCA /* Axe.swift in Sources */,
 			);
@@ -296,8 +305,11 @@
 		2BDAD7BE1FAFC50000A8BCCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -305,7 +317,9 @@
 		2BDAD7BF1FAFC50000A8BCCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};

@@ -1,12 +1,13 @@
 //
-//  main.swift
+//  Player.m
 //  Projet 3 : Créez votre premier jeu vidéo avec Swift !
 //
-//  Created by Levent Bostanci on 05/11/2017.
+//  Created by Levent Bostanci on 07/11/2017.
 //  Copyright © 2017 Levent Bostanci. All rights reserved.
 //
 
-import Foundation
+#import "Player.h"
 
-var x = Game()
-x.start()
+@implementation Player
+
+@end

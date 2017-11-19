@@ -8,12 +8,9 @@
 
 import Foundation
 
-class Warrior : Characters{
-    override init(){
-        super.init()
-        type = CharactersType.Warrior
-        healthPoints = 100
-        currentHealth = healthPoints
-        weapon = Sword()
+class Warrior : Character{
+
+    init(name: String) {
+        super.init(name: name, type: .Warrior, healthPoints: 100, weapon: Sword())
     }
 }

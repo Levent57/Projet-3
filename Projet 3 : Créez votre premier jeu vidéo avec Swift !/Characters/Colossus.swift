@@ -8,12 +8,9 @@
 
 import Foundation
 
-class Colossus : Characters{
-    override init(){
-        super.init()
-        type = CharactersType.Colossus
-        healthPoints = 140
-        currentHealth = healthPoints
-        weapon = Shield()
+class Colossus : Character{
+
+    init(name: String){
+        super.init(name: name, type: .Colossus, healthPoints: 140, weapon: Shield())
     }
 }

@@ -9,68 +9,193 @@
 import Foundation
 
 class Game{
-    
 
-    func newGame(){
-                gameDescription()
-                creatTeam()
-        }
+    var teams = [Team]()
     
-    func gameDescription(){
-            print("====== Bienvenue dans OC war ======")
-            print("Ce jeu mettra en confrontation 2 équipes dans un combat à mort")
+        func start(){
+                    gameDescription()
+                    namePlayer1()
+//                    namePlayer2()
+//            for i in 0..<2 {
+//                print("\nJoueur \(i + 1) Choisissez vos Héros")
+//                    creatTeam1()
+//                    creatTeam2()
+                //créer l'équipe
+                //créer joueurs (3)
+                //ajouter les joueurs crées à l'équipe
+                //ajouter l'équipe au tableau team
+//            }
+                //début du combat tour par tour
         }
-    
 
-    func creatTeam(){
-        var team1 =  [Characters]()
-//        var team2 = [Characters]()
-        let boucleInfinie = true
-//        let numberOfPlayer = 2
-//        let numberOfCharacterPerPlayer = 3
-        var choice1 = 0
+    
+        func gameDescription(){
+        print("====== Bienvenue dans OC war ======")
+        print("Ce jeu mettra en confrontation 2 équipes dans un combat à mort")
+    }
+    
+    var player1 = [Character]()
+    var player2 = [Character]()
+    var player1Name : String = ""
+    var player2Name : String = ""
+    
+    func namePlayer1(){
+        print()
+        print("Joueur 1 entrez le nom de votre équipe:")
+        if let choice = readLine(){
+            player1Name = choice
+        }
+        creatTeam1()
+    }
+    
+    func namePlayer2(){
+        print()
+        print("Joueur 2 entrez le nom de votre équipe:")
+        if let choice = readLine(){
+            player2Name = choice
+        }
+        creatTeam2()
+    }
+    
+    func creatTeam1(){
+    
+        var userChoice = 0
+        print()
+        print("Joueur 1: Veuillez choisir les 3 personnages qui composeront votre équipe: ")
+       
         repeat{
-            accueil()
+            printSelectCharacter()
             repeat{
-                choice1 = inputInt()
-            }while choice1 != 1 && choice1 != 2 && choice1 != 3 && choice1 != 4
-            
-            switch choice1{
+                userChoice = inputInt()
+            }while userChoice != 1 && userChoice != 2 && userChoice != 3 && userChoice != 4
+        
+            switch userChoice {
             case 1:
-                let warrior = Warrior()
-                team1.append(warrior)
+                print("Veuillez entrez un nom à votre personnage")
+                let characterName = inputString()
+                if characterName != nil {
+                    let warrior = Warrior(name: "\(characterName)")
+                player1.append(warrior)
+                }
+                
             case 2:
-                let mage = Mage()
-                team1.append(mage)
+                print("Veuillez entrez un nom à votre personnage")
+                let characterName = inputString()
+                if characterName != nil {
+                let colossus = Colossus(name: "\(characterName)")
+                player1.append(colossus)
+                }
+                
             case 3:
-                let colossus = Colossus()
-                team1.append(colossus)
+                print("Veuillez entrez un nom à votre personnage")
+                let characterName = inputString()
+                if characterName != nil {
+                let mage = Mage(name: "\(characterName)")
+                player1.append(mage)
+                }
+                
             case 4:
-                let dwarf = Dwarf()
-                team1.append(dwarf)
+                print("Veuillez entrez un nom à votre personnage")
+                let characterName = inputString()
+                if characterName != nil {
+                let dwarf = Dwarf(name: "\(characterName)")
+                player1.append(dwarf)
+                }
+                
             default:
                 break
-            
             }
-        }while boucleInfinie       
+        }while player1.count != 3
+        
+            for c in player1 {
+                print()
+                print("===========================")
+                print("Personnage \(c): ")
+                c.describ()
+            }
+        namePlayer2()
     }
-
-    func accueil(){
+    
+    func creatTeam2(){
+        
+        var userChoice = 0
         print()
-        print("Choisissez les personnages qui composeront l'équipe 1")
-        print("1. Combattant")
-        print("2. Mage")
-        print("3. Géant")
-        print("4. Nain")
+        print("Joueur 2: Veuillez choisir les 3 personnages qui composeront votre équipe: ")
+        
+        repeat{
+            printSelectCharacter()
+            repeat{
+                userChoice = inputInt()
+            }while userChoice != 1 && userChoice != 2 && userChoice != 3 && userChoice != 4
+            
+            switch userChoice {
+            case 1:
+                print("Veuillez entrez un nom à votre personnage")
+                let characterName = inputString()
+                if characterName != nil {
+                let warrior = Warrior(name: "\(characterName)")
+                player2.append(warrior)
+                }
+                
+            case 2:
+                print("Veuillez entrez un nom à votre personnage")
+                let characterName = inputString()
+                if characterName != nil {
+                let colossus = Colossus(name: "\(characterName)")
+                player2.append(colossus)
+                }
+                
+            case 3:
+                print("Veuillez entrez un nom à votre personnage")
+                let characterName = inputString()
+                if characterName != nil {
+                let mage = Mage(name: "\(characterName)")
+                player2.append(mage)
+                }
+                
+            case 4:
+                print("Veuillez entrez un nom à votre personnage")
+                let characterName = inputString()
+                if characterName != nil {
+                let dwarf = Dwarf(name: "\(characterName)")
+                player2.append(dwarf)
+                }
+                
+            default:
+                break
+            }
+        }while player2.count != 3
+        
+        for c in player2 {
+            print()
+            print("=======================")
+            print("Personnage \(c): ")
+            c.describ()
+        }
     }
-
-
+    
+    func printSelectCharacter(){
+        print("===========================")
+        print("1. Combattant, personnage polyvalant")
+        print("2. Colosse, personnage résistant aux attaques mais ayant de faibles dégats d'attaque")
+        print("3. Mage, permet de soigner les autres joueurs de on équipe, ne peut pas attaquer")
+        print("4. Nain, peu de vie mais inflige de plus gros dégats aux adversaires")
+        print("===========================")
+    }
+    
+    
+    
+    
     func inputInt() -> Int {
         guard let data = readLine() else { return 0 }
         guard let dataToInt = Int(data) else { return 0 }
         return dataToInt
     }
 
-}
-    
+    func inputString() -> String {
+        guard let data = readLine() else { return "" }
+        return data
+    }
 
+
+}
