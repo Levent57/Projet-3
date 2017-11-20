@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B1ABC921FB26D4A00E8C8F9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1ABC911FB26D4A00E8C8F9 /* Player.swift */; };
 		2B5A927B1FBC49ED005E01FB /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A927A1FBC49ED005E01FB /* Team.swift */; };
 		2BDAD7BA1FAFC50000A8BCCA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7B91FAFC50000A8BCCA /* main.swift */; };
 		2BDAD7C11FAFC51E00A8BCCA /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7C01FAFC51E00A8BCCA /* Character.swift */; };
@@ -36,7 +35,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2B1ABC911FB26D4A00E8C8F9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		2B5A927A1FBC49ED005E01FB /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		2BDAD7B61FAFC50000A8BCCA /* Projet 3 : Créez votre premier jeu vidéo avec Swift ! */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Projet 3 : Créez votre premier jeu vidéo avec Swift !"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BDAD7B91FAFC50000A8BCCA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 			children = (
 				2BDAD7B91FAFC50000A8BCCA /* main.swift */,
 				2BE6C2FA1FAFCB4A004E807A /* Game.swift */,
-				2B1ABC911FB26D4A00E8C8F9 /* Player.swift */,
 				2B5A927A1FBC49ED005E01FB /* Team.swift */,
 				2BDAD7D51FAFC84C00A8BCCA /* Weapons */,
 				2BDAD7CA1FAFC55900A8BCCA /* Characters */,
@@ -180,7 +177,6 @@
 				2BDAD7C71FAFC54400A8BCCA /* Colossus.swift in Sources */,
 				2B5A927B1FBC49ED005E01FB /* Team.swift in Sources */,
 				2BDAD7C31FAFC53000A8BCCA /* Warrior.swift in Sources */,
-				2B1ABC921FB26D4A00E8C8F9 /* Player.swift in Sources */,
 				2BDAD7CC1FAFC7CA00A8BCCA /* Weapon.swift in Sources */,
 				2BDAD7C91FAFC55300A8BCCA /* Dwarf.swift in Sources */,
 				2BDAD7BA1FAFC50000A8BCCA /* main.swift in Sources */,
