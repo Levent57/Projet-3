@@ -17,5 +17,12 @@ class Team {
         self.name = name
     }
     
+    func teamDescription() {
+        print()
+        print("Nom de l'équipe : \(self.name) ")
+        for c in characters {
+            c.describ()
+        }
+    }
     
 }

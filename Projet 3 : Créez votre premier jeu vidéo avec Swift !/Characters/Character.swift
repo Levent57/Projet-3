@@ -31,12 +31,14 @@ class Character {
     }
 
     func describ() {
-        
+        print()
         print("Nom du personnage: \(self.name)"
-            + "\nType: \(self.type)"
+            + ""
             + "\nVie: \(currentHealth)/\(healthPoints)"
-            + "\nArme: \(self.weapon)"
+            + "\nDégats de l'arme: \(self.weapon.attackPoints)"
+            + "\nSoins prodigués: \(self.weapon.healPoints)"
             + "")
+    
     }
 
     func attack(target: Character){
@@ -45,7 +47,7 @@ class Character {
             self.currentHealth = 0
         }
     }
-
+//personnage qui attaque en vie / target toujours vivante 
 
 
 }
