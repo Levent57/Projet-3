@@ -16,11 +16,11 @@ class Character {
     
     var name: String
     let type: CharacterType
-    var number: Int?
     
     let healthPoints: Int
     var currentHealth: Int
     var weapon: Weapon
+
 
     init(name: String, type: CharacterType, healthPoints: Int, weapon: Weapon){
         self.name = name
@@ -38,16 +38,27 @@ class Character {
             + "\nDégats de l'arme: \(self.weapon.attackPoints)"
             + "\nSoins prodigués: \(self.weapon.healPoints)"
             + "")
-    
     }
-
-    func attack(target: Character){
-        target.currentHealth -= self.weapon.attackPoints
-        if self.currentHealth < 0 {
-            self.currentHealth = 0
+    
+    var isAlive: Bool {
+        if currentHealth <= 0 {
+            return false
+        } else {
+            return true
         }
     }
-//personnage qui attaque en vie / target toujours vivante 
+    
+    func attack(target: Character){
+        if self.currentHealth < 0 {
+            if target.currentHealth < 0{
+                target.currentHealth -= self.weapon.attackPoints
+                if target.currentHealth < 0 {
+                    target.currentHealth = 0
+                }
+            }
+        }
+    }
+ 
 
 
 }

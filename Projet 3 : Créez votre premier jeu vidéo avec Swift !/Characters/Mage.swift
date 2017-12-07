@@ -15,7 +15,7 @@ class Mage : Character{
     }
     
     override func attack(target: Character) {
-        print("peut pas attack")
+        print("Ne peut pas attaquer")
     }
     
     func heal(target: Character){

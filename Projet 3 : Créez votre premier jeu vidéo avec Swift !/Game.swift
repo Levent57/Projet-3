@@ -11,11 +11,10 @@ import Foundation
 class Game{
 
     var teams = [Team]()
-    
-
 
     func start(){
         gameDescription()
+        
         for i in 0..<2{
             print()
             print("joueur \(i + 1) c'est à vous !")
@@ -23,10 +22,13 @@ class Game{
             team.characters = addTeamCharacters()
             teams.append(team)
         }
-            GameDescription()
+        
+        TeamsDescription()
+        fight()
+        
 //        le combat commence
+
     }
-    
     
     func gameDescription(){
                 print("====== Bienvenue dans OC war ======")
@@ -103,19 +105,90 @@ class Game{
     }
     
 
-    func GameDescription() {
-    print()
-    print("==================================")
-    print("Résumé des deux équipes: ")
-    for t in teams {
-        t.teamDescription()
+    func TeamsDescription() {
+        print()
+        print("==================================")
+        print("Description de l'équipe : ")
+        for i in teams{
+            i.teamDescription()
+        }
+    }
+    
+    func fight() {
+
+        var userChoice = 0
+
+        repeat{
+            for i in 0..<2 {
+                print()
+                print("C'est au tour du joueur \(i + 1) de jouer: ")
+                
+                print("==================================")
+                print("Description de l'équipe \(i + 1): ")
+                print("(\(teams[i].teamDescription())")
+                
+                print("Choissez un personnage:")
+                repeat{
+                    userChoice = inputInt()
+                } while userChoice != 1 && userChoice != 2 && userChoice != 3
+                
+                let characterTeam = teams[i].characters[userChoice - 1]
+                
+                if let mage = characterTeam as? Mage{
+                    print("Selectionnez un personnage de votre équipe à soigner")
+                    print("\(teams[i].teamDescription())")
+                    repeat{
+                        userChoice = inputInt()
+                    } while userChoice != 1 && userChoice != 2 && userChoice != 3
+                    mage.heal(target: teams[i].characters[userChoice - 1])
+                    print("Vous avez soigné le personnage de \(characterTeam.weapon.healPoints) points")
+                    
+                }else{
+                    print("Selectionnez un personnage de l'équipe adverse à attaquer")
+                    
+                    if i == 0 {
+                       print("\(teams[i + 1].teamDescription())")
+                        repeat{
+                            userChoice = inputInt()
+                        } while userChoice != 1 && userChoice != 2 && userChoice != 3
+                        characterTeam.attack(target: teams[i + 1].characters[userChoice - 1])
+                         print("Vous avez infligés \(characterTeam.weapon.attackPoints) points de dégats")
+                    } else {
+                        print("\(teams[i - 1].teamDescription())")
+                        repeat{
+                            userChoice = inputInt()
+                        } while userChoice != 1 && userChoice != 2 && userChoice != 3
+                        characterTeam.attack(target: teams[i - 1].characters[userChoice - 1])
+                         print("Vous avez infligés \(characterTeam.weapon.attackPoints) points de dégats")
+                    }
+                }
+            }
+        }while !teams[0].characters.isEmpty || !teams[1].characters.isEmpty
+    }
+    
+    
+    func removeTeam(){
+        for player in teams {
+            var characterNumber = 0
+            for character in player.characters {
+                if character.currentHealth < 1{
+                    print()
+                    print("\(character.name) est mort !")
+                    print()
+                    player.characters.remove(at: characterNumber)
+                }
+                characterNumber += 1
             }
         }
-    
-    func fight(playerOne : Character, playerTwo: Character){
-        print("Que le combat commence !")
-    
+        
+        for player in teams {
+            let numberCharacters = player.characters.count
+            if numberCharacters == 0 {
+                teams.remove(at: teams.capacity)
+            }
+        }
     }
     
     
-    }
+    
+}
