@@ -19,11 +19,16 @@ class Mage : Character{
     }
     
     func heal(target: Character){
-        if target.currentHealth > 0{
-            target.currentHealth += self.healthPoints
-            if target.currentHealth > target.healthPoints{
-                target.currentHealth = target.healthPoints
+        if self.currentHealth > 0{
+            if target.currentHealth > 0{
+                target.currentHealth += self.healthPoints
+                print("*** Vous avez soigné le personnage de \(self.weapon.healPoints) points ***")
+                if target.currentHealth > target.healthPoints{
+                    target.currentHealth = target.healthPoints
+                }
             }
         }
     }
+    
+ 
 }

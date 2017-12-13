@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B5A927B1FBC49ED005E01FB /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A927A1FBC49ED005E01FB /* Team.swift */; };
+		2B6472F01FDAC4A3002410FF /* Bow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6472EF1FDAC4A3002410FF /* Bow.swift */; };
 		2BDAD7BA1FAFC50000A8BCCA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7B91FAFC50000A8BCCA /* main.swift */; };
 		2BDAD7C11FAFC51E00A8BCCA /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7C01FAFC51E00A8BCCA /* Character.swift */; };
 		2BDAD7C31FAFC53000A8BCCA /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7C21FAFC53000A8BCCA /* Warrior.swift */; };
@@ -20,6 +21,7 @@
 		2BDAD7D21FAFC80900A8BCCA /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7D11FAFC80900A8BCCA /* Shield.swift */; };
 		2BDAD7D41FAFC81B00A8BCCA /* Axe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDAD7D31FAFC81B00A8BCCA /* Axe.swift */; };
 		2BE6C2FB1FAFCB4A004E807A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6C2FA1FAFCB4A004E807A /* Game.swift */; };
+		2BF835281FE17ADE0099E903 /* Wand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF835271FE17ADE0099E903 /* Wand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		2B5A927A1FBC49ED005E01FB /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		2B6472EF1FDAC4A3002410FF /* Bow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bow.swift; sourceTree = "<group>"; };
 		2BDAD7B61FAFC50000A8BCCA /* Projet 3 : Créez votre premier jeu vidéo avec Swift ! */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Projet 3 : Créez votre premier jeu vidéo avec Swift !"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BDAD7B91FAFC50000A8BCCA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2BDAD7C01FAFC51E00A8BCCA /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		2BDAD7D11FAFC80900A8BCCA /* Shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield.swift; sourceTree = "<group>"; };
 		2BDAD7D31FAFC81B00A8BCCA /* Axe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axe.swift; sourceTree = "<group>"; };
 		2BE6C2FA1FAFCB4A004E807A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		2BF835271FE17ADE0099E903 /* Wand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				2BDAD7CF1FAFC7DC00A8BCCA /* Staff.swift */,
 				2BDAD7D31FAFC81B00A8BCCA /* Axe.swift */,
 				2BDAD7D11FAFC80900A8BCCA /* Shield.swift */,
+				2B6472EF1FDAC4A3002410FF /* Bow.swift */,
+				2BF835271FE17ADE0099E903 /* Wand.swift */,
 			);
 			path = Weapons;
 			sourceTree = "<group>";
@@ -177,6 +183,7 @@
 				2BDAD7C71FAFC54400A8BCCA /* Colossus.swift in Sources */,
 				2B5A927B1FBC49ED005E01FB /* Team.swift in Sources */,
 				2BDAD7C31FAFC53000A8BCCA /* Warrior.swift in Sources */,
+				2BF835281FE17ADE0099E903 /* Wand.swift in Sources */,
 				2BDAD7CC1FAFC7CA00A8BCCA /* Weapon.swift in Sources */,
 				2BDAD7C91FAFC55300A8BCCA /* Dwarf.swift in Sources */,
 				2BDAD7BA1FAFC50000A8BCCA /* main.swift in Sources */,
@@ -185,6 +192,7 @@
 				2BDAD7CE1FAFC7D500A8BCCA /* Sword.swift in Sources */,
 				2BDAD7C11FAFC51E00A8BCCA /* Character.swift in Sources */,
 				2BDAD7C51FAFC53D00A8BCCA /* Mage.swift in Sources */,
+				2B6472F01FDAC4A3002410FF /* Bow.swift in Sources */,
 				2BDAD7D41FAFC81B00A8BCCA /* Axe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

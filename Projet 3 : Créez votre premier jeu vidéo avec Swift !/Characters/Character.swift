@@ -32,12 +32,7 @@ class Character {
 
     func describ() {
         print()
-        print("Nom du personnage: \(self.name)"
-            + ""
-            + "\nVie: \(currentHealth)/\(healthPoints)"
-            + "\nDégats de l'arme: \(self.weapon.attackPoints)"
-            + "\nSoins prodigués: \(self.weapon.healPoints)"
-            + "")
+        print("Nom du personnage: \(self.name) // Vie: \(currentHealth)/\(healthPoints) // Dégats de l'arme: \(self.weapon.attackPoints) // Soins prodigués: \(self.weapon.healPoints)")
     }
     
     var isAlive: Bool {
@@ -49,15 +44,18 @@ class Character {
     }
     
     func attack(target: Character){
-        if self.currentHealth < 0 {
-            if target.currentHealth < 0{
+        if self.currentHealth > 0 {
+            if target.currentHealth > 0{
                 target.currentHealth -= self.weapon.attackPoints
+                print("*** Vous avez infligés \(self.weapon.attackPoints) points de dégats ***")
                 if target.currentHealth < 0 {
                     target.currentHealth = 0
                 }
             }
         }
     }
+    
+    
  
 
 
