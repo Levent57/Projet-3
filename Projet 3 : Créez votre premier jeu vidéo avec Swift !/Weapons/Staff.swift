@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Staff : Weapon{
+class Staff : Weapon{   //Weapon for Mage
  
     init(){
         super.init(attackPoints: 0, healPoints: 8, type: .Healing)

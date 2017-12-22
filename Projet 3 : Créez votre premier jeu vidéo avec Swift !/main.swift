@@ -8,8 +8,9 @@
 
 import Foundation
 
-var x = Game()
-x.start()
+//launch the game
+var newGame = Game()
+newGame.start()
 
 
 

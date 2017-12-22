@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Shield : Weapon{
+class Shield : Weapon{     //Weapon for Colossus
 
     init(){
         super.init(attackPoints: 7, healPoints: 0, type: .Attacking)

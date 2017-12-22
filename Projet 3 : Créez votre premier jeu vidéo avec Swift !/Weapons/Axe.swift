@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Axe : Weapon{
+class Axe : Weapon{    //Weapon for Dwarf
     
     init(){
         super.init(attackPoints: 13, healPoints: 0, type: .Attacking)

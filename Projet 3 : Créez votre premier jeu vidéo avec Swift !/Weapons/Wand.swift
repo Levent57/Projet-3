@@ -8,9 +8,9 @@
 
 import Foundation
 
-class Wand : Weapon{
+class Wand : Weapon{    //Bonus healing weapon
     
     init(){
-        super.init(attackPoints: 0, healPoints: 25, type: .Healing)
+        super.init(attackPoints: 0, healPoints: 20, type: .Healing)
     }
 }

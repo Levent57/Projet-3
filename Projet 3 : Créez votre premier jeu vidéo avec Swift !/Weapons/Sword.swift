@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Sword : Weapon{
+class Sword : Weapon{   //Weapon for Warrior
 
     init(){
         super.init(attackPoints: 10, healPoints: 0, type: .Attacking)

@@ -15,7 +15,7 @@ enum WeaponType{
 class Weapon {
     
     let attackPoints: Int
-    let healPoints: Int 
+    let healPoints: Int
     let type: WeaponType
     
     init(attackPoints: Int, healPoints: Int, type: WeaponType){

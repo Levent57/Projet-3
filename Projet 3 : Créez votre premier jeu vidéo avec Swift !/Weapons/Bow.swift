@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Bow : Weapon {
+class Bow : Weapon {    //Bonus attacking weapon
    
     init(){
         super.init(attackPoints: 25, healPoints: 0, type: .Attacking)
