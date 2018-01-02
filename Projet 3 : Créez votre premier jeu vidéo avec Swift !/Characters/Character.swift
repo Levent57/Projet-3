@@ -47,17 +47,21 @@ class Character {
     
     
     func attack(target: Character){
-        if self.currentHealth > 0 {     //check if character is alive
+        if self.currentHealth > 0{  //check if character is alive
             if target.currentHealth > 0{    //check if target is alive
                 target.currentHealth -= self.weapon.attackPoints
                 print("*** Vous avez infligés \(self.weapon.attackPoints) points de dégats ***")
-                print("Il reste \(target.currentHealth)/\(target.healthPoints) points de vie au personnage \(target.name) ")
                 if target.currentHealth < 0 {
                     target.currentHealth = 0    //can not go below 0 healsPoints
                 }
+                print("Il reste \(target.currentHealth)/\(target.healthPoints) points de vie au personnage \(target.name) ")
+            } else {
+                print("La cible est morte")
             }
+        } else {
+            print("Ce personnage est mort")
         }
     }
- 
+
 }
 

@@ -21,15 +21,20 @@ class Mage : Character{
     
     //will make a character from its own team recover amount of health point
     func heal(target: Character){
+        print("Selectionnez un personnage à soigner")
         if self.currentHealth > 0 {     //check if mage is alive
             if target.currentHealth > 0 {    //check if target is alive
                 target.currentHealth += self.weapon.healPoints
                 print("*** Vous avez soigné le personnage de \(self.weapon.healPoints) points ***")
-                print("Le personnage \(target.name) a maintenant \(target.currentHealth)/\(target.healthPoints) points de vie")
                 if target.currentHealth > target.healthPoints{
-                    target.currentHealth = target.healthPoints     //does not exceed his maximum health points
+                    target.currentHealth = target.healthPoints  //does not exceed his maximum health points
                 }
+                 print("Le personnage \(target.name) a maintenant \(target.currentHealth)/\(target.healthPoints) points de vie")
+            } else {
+                print("La cible est morte")
             }
+        } else {
+            print("Ce personnage est mort")
         }
     }
     

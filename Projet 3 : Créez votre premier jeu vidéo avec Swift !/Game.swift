@@ -28,9 +28,9 @@ class Game{
     }
     
     func gameDescription(){
-                print("====== Bienvenue dans OC war ======")
-                print("Ce jeu mettra en confrontation 2 équipes dans un combat à mort")
-            }
+        print("====== Bienvenue dans OC war ======")
+        print("Ce jeu mettra en confrontation 2 équipes dans un combat à mort")
+    }
     
     func creatNewTeam() -> Team {
         print("Veuillez entrer un nom pour votre équipe: ")
@@ -100,16 +100,6 @@ class Game{
          return charactersArray
     }
     
-    //show the characters of the team
-//    func TeamsDescription() {
-//        print()
-//        print("==================================")
-//        print("Description de l'équipe : ")
-//        for i in teams{
-//            i.teamDescription()
-//        }
-//    }
-    
     func teamsFight() {
         var userChoice = 0
         repeat{
@@ -123,7 +113,7 @@ class Game{
                 userChoice = choiceUser()  //the player's choice is between 1 and 3
                 
                 let characterTeam = teams[i].characters[userChoice - 1]
-
+                
                 randomCheast(character: characterTeam) //the chest appears randomly
                 
                 if let mage = characterTeam as? Mage{   //if the character choosen is a Mage, the game will invite the player to heal an ally
@@ -154,8 +144,7 @@ class Game{
         } while true
     }
     
-    
-    func choiceUser() -> Int{ //trouver nom
+    func choiceUser() -> Int {
         var userChoice = 0
         repeat{
             userChoice = inputInt()
