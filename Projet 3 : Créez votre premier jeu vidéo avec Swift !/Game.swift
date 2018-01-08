@@ -27,7 +27,7 @@ class Game{
         restart()
     }
     
-    func gameDescription(){
+    func gameDescription(){ //Introduce the game
         print("====== Bienvenue dans OC war ======")
         print("Ce jeu mettra en confrontation 2 équipes dans un combat à mort")
     }
@@ -144,7 +144,7 @@ class Game{
         } while true
     }
     
-    func choiceUser() -> Int {
+    func choiceUser() -> Int {  
         var userChoice = 0
         repeat{
             userChoice = inputInt()
