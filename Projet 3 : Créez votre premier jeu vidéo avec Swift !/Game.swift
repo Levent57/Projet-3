@@ -60,8 +60,8 @@ class Game{
             print("===========================")
             print("Choisissez le personnages numero \(i + 1) de votre équipe parmi les suivants: ")
             print("1. Combattant, personnage polyvalant")
-            print("2. Colosse, personnage résistant aux attaques mais ayant de faibles dégats d'attaque")
-            print("3. Mage, permet de soigner les autres joueurs de on équipe, ne peut pas attaquer")
+            print("2. Mage, permet de soigner les autres joueurs de on équipe, ne peut pas attaquer")
+            print("3. Colosse, personnage résistant aux attaques mais ayant de faibles dégats d'attaque")
             print("4. Nain, peu de vie mais inflige de plus gros dégats aux adversaires")
             print("===========================")
             repeat{
