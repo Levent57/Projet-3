@@ -16,7 +16,7 @@ class Game{
 
     func start(){
         gameDescription()
-        for i in 0..<2{     // Set at 2 because there is only 2 teams
+        for i in 0..<2{     // Set at 2 because there is only 2 teams 
             print()
             print("joueur \(i + 1) c'est à vous !")
             let team = creatNewTeam()
